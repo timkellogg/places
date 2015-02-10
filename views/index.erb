@@ -1,0 +1,18 @@
+<h2>Your Places</h2>
+
+<p>Here's where you've been</p>
+
+<ul>
+	<% @places.each do |place| %>
+		<li><%= place %></li>
+	<% end %> 
+</ul>
+
+<form action="/places" method="post">
+	<label for="where">Add a Place</label>
+	<input type="text" name="where" id="where">
+	
+	<button type="submit">Add place</button>
+	
+	
+</form>
