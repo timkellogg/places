@@ -4,7 +4,7 @@
 
 <ul>
 	<% @places.each do |place| %>
-		<li><%= place %></li>
+		<li><%= place.place self %></li> 
 	<% end %> 
 </ul>
 
@@ -14,5 +14,5 @@
 	
 	<button type="submit">Add place</button>
 	
-	
 </form>
+
